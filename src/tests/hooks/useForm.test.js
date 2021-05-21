@@ -11,7 +11,7 @@ describe("Pruebas en useForm", () => {
 
   test("Debe regresar un formulario por defecto", () => {
     const { result } = renderHook(() => useForm(initialForm));
-    // cambiar después para q devuelva un {} en lugar de un []
+    //Nota: cambiar después para q devuelva un {} en lugar de un [] cuando haga otra app
     const [values, handleInputChange, reset] = result.current;
 
     expect(values).toEqual(initialForm);
@@ -37,7 +37,7 @@ describe("Pruebas en useForm", () => {
 
     const [formValues] = result.current;
 
-    // de esta forma verifico que los otros campos q no sean name, no cambiaron
+    // de esta forma verifico que los otros campos q no sean name, no cambiaron pero el name si
     expect(formValues).toEqual({ ...initialForm, name: "Carlos" });
   });
 
