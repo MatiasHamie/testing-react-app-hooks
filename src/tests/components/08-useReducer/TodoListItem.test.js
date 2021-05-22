@@ -7,7 +7,7 @@ import { nuevoTodo } from "../../fixtures/demoTodos";
 describe("Pruebas en <TodoListItem />", () => {
   // simulo las funciones con jest
   // recordemos que no me interesa si se borra un todo o algo por el estilo
-  // solo quiero ver como se renderiza, que se llama y como se renderiza
+  // solo quiero ver como se renderiza y que se llama
   const handleDelete = jest.fn();
   const handleToggle = jest.fn();
 
