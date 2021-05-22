@@ -18,7 +18,7 @@ describe("Pruebas en todoReducer", () => {
 
     const state = todoReducer(initialTodos, action);
 
-    expect(state.length).toEqual(3);
+    expect(state.length).toEqual(initialTodos.length + 1);
     expect(state).toEqual([...initialTodos, nuevoTodo]);
   });
 
